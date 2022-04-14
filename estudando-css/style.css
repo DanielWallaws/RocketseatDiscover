@@ -1,0 +1,51 @@
+h1{
+    color: blue;
+    font-family: 'Redressed', cursive;
+}
+strong{
+    color: red;
+}
+/* É um cálculo matemático, onde cada tipo de seletor e origem do estilo possuem valores a serem considerados.
+
+Os mais fracos são universal selector, combinators e negation pseudo-class, com o valor de 0. Em seguida, com valor de 1, são os element type selector e pseudo-elements.
+
+Também temos os classes e attribute selectors, com valor de 10, ou seja, são mais fortes que os anteriores.
+
+O segundo mais forte, ID selector, com um valor de 100, vence todos os selectors anteriores.
+
+Por fim, temos o inline, com o valor 1000, quaisquer desses selectors anteriormente citado*/
+/*
+0. universal selector ( * )
+* {
+    color: red;
+}
+
+
+1. Elemental selector e pseudo-elements
+(::before, ::after )
+h1{
+    color: red;
+}
+
+
+10. Classes e attribute selectors([type="radio"])
+<h1 class="title"></h1>
+.title{
+    color: red;
+}
+
+100. ID Selector ( # ) 
+<h1 id="my-title"></h1>
+#my-title{
+    color: red;
+}
+
+
+1000. Inline ( style ) na linha de comando
+<h1 style="color: orange;"> Titulo </h1>
+
+sintaxe: !important
+
+São raras as ocasiões nas quais se devem usar um iportant, pois é em geral uma má pratica, visto que quebra o fluxo natural da cascata e pode acabar te atrapalhando caso você a deixe em algum lugar no seu código.
+
+Portanto evite ao máximo seu uso.
