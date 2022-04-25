@@ -1,7 +1,14 @@
-/*Um tipo de valor existente no CSS, é estruturado com um nome seguido de abre e fecha parênteses.
+<!--
+    Funções
+
+
+
+Descrição
+Um tipo de valor existente no CSS, é estruturado com um nome seguido de abre e fecha parênteses.
 
 Recebe um argumento, que são seus valores.
 
-Um exemplo de função é:*/
-h1
-{color: rgb(255,0,100);}
+Um exemplo de função é:
+
+color: rgb(255,0,100);
+-->

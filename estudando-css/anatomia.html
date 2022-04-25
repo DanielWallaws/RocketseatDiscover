@@ -1,0 +1,56 @@
+<!--
+    Nesta aula, falaremos sobre a anatomia do CSS, como criar esse CSS para poder alterar algum elemento do HTML.
+
+Na verdade, é bem simples, temos o nome de algum elemento, uma chave aberta e uma fechada embaixo, e no meio vamos ter propriedades e seus valores.
+
+Toda propriedade é seguida de : (dois pontos) e um valor e um ; (ponto e vírgula) para encerrar essa ideia de valor.
+
+Abaixo um exemplo de CSS:
+h1 {
+	color: blue;
+	font-size: 60px;
+	background: gray;
+}
+Os elementos do CSS são então:
+Selectors: Nesse caso o h1, que vai buscar no HTML a tag h1 e aplicar as mudanças.
+
+Declaration: As chaves e tudo dentro delas.
+
+Properties: As coisas a serem alteradas.
+
+Property values: Os novos valores que estamos atribuindo a tais propriedades.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="container" class="m-40">
+        <h1>Título</h1>        
+    </div>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        #container{
+            width: 200px;
+        }
+
+        .m-40{
+            margin: 40px;
+        }
+
+        h1 {
+        color: rgb(0, 0, 0);
+        font-size: 60px;
+        background: rgb(53, 255, 2);
+    }
+    </style>    
+</body>
+</html>
