@@ -11,7 +11,7 @@
     remover e o método indexOff(), que encontra o index do valor 
     que recebe como argumento em um array.
 */
-
+ 
 
 // MANIPULANDO ARRAYS
 
@@ -21,12 +21,16 @@ techs.push("nodejs")
 // adicionar no começo
 techs.unshift("sql")
 // remover do fim
-techs.pop()
+// techs.pop()
 // remover do começo
-techs.shift()
+// techs.shift()
 // pegar somente alguns elementos do array
-console.log(techs.slice(1, 3))
+// console.log(techs.slice(1, 3))
 // remover 1 ou mais intens em qualquer posição do array
+// techs.splice(1, 2)
 // encontrar a posição de um elemento
+let index = techs.indexOf('nodejs')
+
+techs.splice(index, 1)
 
 console.log(techs)
