@@ -9,22 +9,23 @@
 
 // Celcius em Fahrenheint
 
-function converterTemperature(string, value) {
+function temperatureConverter(type="", value="") {
     
-    const setFahrenheint = `Você digitou uma temperatura em Fahrenheint`
-    const setCelcius = `Você digitou uma temperatura em Celcius`
+    const setFahrenheint = `Você digitou uma temperatura em Fahrenheint.`
+    const setCelcius = `Você digitou uma temperatura em Celcius.`
     
     
-    if(string === F || string === f) {
-        FtoC = (Number(value)-32)*5/9;
+    if(type == "F" || type == "f") {
+        let FtoC = (Number(value)-32)*5/9;
         
-        console.log(`Essa temperatura convertida para Celsius fica ${FtoC} graus Celcius.`)
+        console.log(`${setFahrenheint} Essa temperatura convertida para Celsius fica ${FtoC.toFixed(0)} graus Celcius.`)
 
-    } else if(string === C || string === c) {
+    } else if(type === "C" || type === "c") {
+        let CtoF = (Number(value)*9/5) + 32;
+
+        console.log(`${setCelcius} Essa temperatura convertida para Fahrenheint  fica ${CtoF.toFixed(0)} graus Fahrenheint.`)
 
     } else {
-
+        console.log("Tipo da temperatura ou valor da temperatura é invalido.")
     }
-    
-    
 }
